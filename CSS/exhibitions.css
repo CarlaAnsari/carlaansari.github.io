@@ -1,0 +1,54 @@
+.ex-h1EN{
+    position:relative;
+    z-index:2;
+    max-width: 20%;
+    margin-top: 100px;
+    margin-left: 10%;
+    opacity: 0.5;
+    background:transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Playfair+Display'; 
+    font-weight: 10;
+    font-size: 180px;
+    letter-spacing: 10px;
+    padding-bottom: 0px;
+}
+
+.ex-pEN{
+    position: relative;
+    padding-top: 0px;
+    width: 45%;
+    margin-left: 14%;
+    font-family: 'Source+Sans+Pro';
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.test-img{
+    margin-top: 30px;
+}
+.quote1{
+    position:relative;
+    z-index:2;
+    margin-right: 10%;
+    opacity: 0.5;
+    background:transparent;
+    color: #fff;
+    z-index: 10;
+}
+
+.exp-towel-p{
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    bottom: auto;
+    font-family: 'Source+Sans+Pro';
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+    padding-bottom : 50px;
+}

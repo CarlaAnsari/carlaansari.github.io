@@ -1,0 +1,120 @@
+.menu{
+    background: #000;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    z-index: 100;
+    position: fixed;
+}
+
+.m-left{
+    float: left;
+}
+
+.m-right{
+    float: right;
+}
+
+.logo{
+    text-decoration: none;
+    margin: 5px; 
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Playfair+Display';
+    font-weight: 530;
+    font-size: 33px;
+    letter-spacing: 3px;
+}
+
+a.logo:hover{
+    opacity: 0.5;
+    background:transparent;
+}
+
+.m-link{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 3px;
+    margin: 0 5px;
+    transition: all 0.6s ease-in-out;
+    
+    border-bottom: 4px solid transparent;
+    display: inline-block;
+    height: 41px;
+}
+
+.m-link:hover{
+    border-bottom: 3px solid #fff;
+} 
+
+.m-link i{
+    margin-right: 5px;
+}
+
+.m-nav-toggle{
+    width: 30px;
+    height: 60px;
+    
+    display: none;
+    align-items: center;
+    float: right;
+    cursor: pointer;
+}
+
+.m-toggle-icon, .m-toggle-icon:before, .m-toggle-icon:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.m-toggle-icon:before{top: 12px;}
+.m-toggle-icon:after{top: -14px;}
+
+.m-right.is-open{
+    transform: translateX(0);
+}
+
+.m-nav-toggle.is-open span.m-toggle-icon{
+    transform: rotate(90deg);
+    background: #fff;
+}
+
+.m-nav-toggle.is-open span.m-toggle-icon:before{
+    background: transparent;
+}
+
+.m-nav-toggle.is-open span.m-toggle-icon:after{
+    background: transparent;
+}
+
+@media only screen and (max-width: 980px){
+.m-right{
+    position: absolute;
+    top: 50px;right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.m-link{
+    display: block;
+    background: #000;
+    text-align: center;
+    padding: 0;margin: 0 auto;
+    height: 55px;
+}
+
+.m-nav-toggle{
+    display: flex;
+}
